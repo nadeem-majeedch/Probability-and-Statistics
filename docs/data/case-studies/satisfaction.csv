@@ -1,0 +1,181 @@
+respondent_id,department,wait_minutes,resolved_first_contact,satisfaction
+6001,Registration,62.100,yes,2
+6002,Registration,21.400,yes,3
+6003,IT Desk,22.500,yes,3
+6004,IT Desk,29.000,no,1
+6005,Library,25.700,yes,2
+6006,Registration,47.400,no,1
+6007,Registration,35.000,yes,2
+6008,Finance,17.300,yes,2
+6009,Registration,22.500,yes,3
+6010,Finance,6.100,yes,3
+6011,Finance,20.900,yes,1
+6012,IT Desk,13.300,no,4
+6013,IT Desk,16.000,yes,4
+6014,IT Desk,15.500,yes,3
+6015,IT Desk,16.200,yes,2
+6016,IT Desk,7.300,no,4
+6017,Registration,7.700,yes,3
+6018,Registration,28.400,yes,1
+6019,Finance,5.600,no,3
+6020,Library,41.700,no,3
+6021,Finance,19.300,no,1
+6022,Registration,7.600,yes,2
+6023,Library,10.400,yes,4
+6024,Finance,17.400,no,2
+6025,Registration,9.600,yes,2
+6026,Finance,16.000,no,2
+6027,Registration,16.800,no,3
+6028,Finance,35.800,yes,1
+6029,Registration,11.200,yes,2
+6030,Registration,8.000,yes,4
+6031,Registration,21.300,yes,1
+6032,Library,8.200,yes,4
+6033,Registration,12.600,yes,2
+6034,IT Desk,14.600,yes,3
+6035,Finance,35.100,yes,2
+6036,Registration,22.700,yes,4
+6037,IT Desk,20.800,yes,4
+6038,Library,20.100,no,3
+6039,IT Desk,34.900,yes,2
+6040,Library,9.500,no,3
+6041,Finance,13.500,yes,1
+6042,Library,37.800,yes,3
+6043,Registration,17.400,yes,2
+6044,Registration,29.800,yes,2
+6045,IT Desk,25.000,no,2
+6046,Registration,13.500,no,3
+6047,Registration,14.200,no,2
+6048,Registration,5.600,no,3
+6049,Registration,45.500,no,1
+6050,Library,23.100,no,3
+6051,Library,34.700,yes,2
+6052,Registration,18.500,yes,2
+6053,Registration,16.500,yes,4
+6054,Registration,17.600,yes,2
+6055,Library,17.500,no,4
+6056,Registration,83.100,no,1
+6057,Registration,19.900,yes,1
+6058,IT Desk,39.700,yes,3
+6059,Library,24.700,yes,3
+6060,Registration,47.700,yes,1
+6061,Finance,26.900,yes,2
+6062,Finance,10.800,no,2
+6063,IT Desk,21.700,yes,2
+6064,Library,17.700,no,2
+6065,Finance,61.600,no,1
+6066,IT Desk,28.400,no,3
+6067,Finance,13.600,yes,1
+6068,Finance,40.100,yes,1
+6069,Library,32.500,yes,1
+6070,IT Desk,4.600,yes,3
+6071,Registration,22.300,no,2
+6072,Library,3.800,no,5
+6073,Registration,46.200,no,1
+6074,IT Desk,37.000,no,4
+6075,Registration,8.200,yes,2
+6076,Registration,31.100,yes,2
+6077,Registration,20.700,no,2
+6078,Registration,53.600,no,1
+6079,IT Desk,5.900,yes,3
+6080,IT Desk,4.600,no,4
+6081,Registration,14.400,yes,2
+6082,Finance,15.400,yes,2
+6083,IT Desk,15.000,yes,4
+6084,IT Desk,8.600,no,4
+6085,Library,43.100,yes,2
+6086,IT Desk,8.100,no,1
+6087,Finance,16.400,yes,3
+6088,IT Desk,13.800,yes,2
+6089,Library,7.600,yes,3
+6090,Finance,6.600,yes,3
+6091,Finance,19.700,yes,2
+6092,IT Desk,11.600,yes,4
+6093,IT Desk,43.500,yes,1
+6094,IT Desk,5.200,yes,4
+6095,IT Desk,31.500,yes,3
+6096,Finance,10.900,yes,2
+6097,Library,12.500,yes,4
+6098,Library,26.100,no,4
+6099,Finance,1.300,yes,3
+6100,Registration,11.400,yes,3
+6101,IT Desk,20.700,yes,2
+6102,Library,51.000,yes,1
+6103,Registration,12.900,no,3
+6104,Registration,20.200,yes,4
+6105,Registration,12.600,yes,2
+6106,Library,17.700,no,2
+6107,Registration,24.400,yes,2
+6108,Finance,18.800,no,1
+6109,Registration,15.400,no,2
+6110,Registration,23.800,no,3
+6111,Finance,16.300,yes,1
+6112,IT Desk,13.400,yes,4
+6113,Library,20.400,no,3
+6114,Finance,12.700,yes,3
+6115,Registration,50.300,no,1
+6116,IT Desk,28.300,yes,2
+6117,Library,6.000,no,3
+6118,IT Desk,18.400,no,2
+6119,Registration,9.300,yes,2
+6120,IT Desk,51.900,yes,2
+6121,Registration,10.700,yes,3
+6122,Finance,19.700,yes,2
+6123,Library,12.000,yes,2
+6124,Registration,18.000,no,1
+6125,Registration,28.800,no,2
+6126,Library,22.900,yes,3
+6127,Registration,35.100,yes,2
+6128,IT Desk,9.400,yes,3
+6129,Library,28.400,yes,3
+6130,Registration,13.200,yes,3
+6131,Finance,13.800,no,4
+6132,Registration,9.800,no,2
+6133,Finance,25.700,yes,5
+6134,IT Desk,4.400,yes,1
+6135,IT Desk,12.000,no,4
+6136,Library,20.600,yes,3
+6137,Finance,15.800,yes,3
+6138,Library,5.900,yes,4
+6139,Library,15.600,yes,4
+6140,Finance,19.200,no,3
+6141,Library,34.100,no,3
+6142,Registration,17.100,yes,4
+6143,IT Desk,23.500,no,3
+6144,Registration,52.900,yes,1
+6145,Finance,6.700,yes,3
+6146,Finance,1.700,yes,3
+6147,Finance,26.100,no,1
+6148,Library,15.200,yes,3
+6149,Registration,15.300,no,2
+6150,IT Desk,9.500,no,3
+6151,Registration,24.200,yes,3
+6152,IT Desk,37.000,yes,1
+6153,IT Desk,3.200,no,2
+6154,Finance,18.700,yes,2
+6155,Finance,14.900,no,3
+6156,Finance,16.500,yes,3
+6157,Finance,11.700,no,1
+6158,IT Desk,35.900,yes,2
+6159,IT Desk,31.800,yes,3
+6160,IT Desk,6.200,yes,3
+6161,Finance,11.700,yes,2
+6162,Library,14.700,yes,3
+6163,Library,8.800,yes,4
+6164,IT Desk,19.900,yes,3
+6165,Library,12.400,no,4
+6166,Finance,27.200,yes,3
+6167,Library,19.400,no,4
+6168,Library,13.700,yes,3
+6169,IT Desk,14.900,no,3
+6170,Registration,6.300,yes,4
+6171,Library,14.100,no,4
+6172,IT Desk,12.300,yes,3
+6173,IT Desk,36.200,yes,3
+6174,Finance,10.300,no,3
+6175,Library,8.900,no,4
+6176,Library,27.400,yes,1
+6177,Registration,24.100,yes,4
+6178,IT Desk,18.300,yes,1
+6179,Library,5.500,yes,4
+6180,Library,12.200,yes,2

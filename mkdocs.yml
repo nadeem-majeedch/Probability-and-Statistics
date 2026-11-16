@@ -1,0 +1,364 @@
+# ---------------------------------------------------------------------------
+# Probability and Statistics for Data Science
+# Site configuration — MkDocs Material
+#
+# Scope note: `nav` lists only pages that exist. Modules are added to `nav` as
+# each phase delivers them, so the build is strict-clean at every phase boundary
+# rather than pointing at 30 unwritten pages.
+# ---------------------------------------------------------------------------
+
+site_name: Probability and Statistics for Data Science
+site_description: >-
+  A complete self-study course in probability and statistics for BS Data Science
+  students — derivations, worked examples, simulations, Python and interactive
+  labs.
+site_author: Engr. Dr. Muhammad Nadeem Majeed
+site_url: https://nadeem-majeedch.github.io/Probability-and-Statistics/
+repo_url: https://github.com/nadeem-majeedch/Probability-and-Statistics
+repo_name: nadeem-majeedch/Probability-and-Statistics
+edit_uri: edit/main/docs/
+copyright: >-
+  © 2026 Engr. Dr. Muhammad Nadeem Majeed · Department of Data Science (PUCIT),
+  University of the Punjab, Lahore · Content CC BY-NC-SA 4.0 · Code MIT
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: en
+  custom_dir: overrides
+  logo: assets/images/brand/logo.svg
+  favicon: assets/images/brand/favicon.svg
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.instant.prefetch
+    - navigation.tracking
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - navigation.path
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.code.select
+    - content.tabs.link
+    - content.tooltips
+    - content.action.edit
+    - content.action.view
+
+nav:
+  - Home: index.md
+  - Start here:
+      - Syllabus: syllabus.md
+      - How to study: how-to-study.md
+      - Set up your computer: setup.md
+      - Course roadmap: roadmap.md
+      - Frequently asked questions: faq.md
+  - Course map: modules/index.md
+  - Part I — Foundations:
+      - part-1-foundations/index.md
+      - M01 · Introduction to Probability and Statistics:
+          - Overview: modules/01-introduction-to-statistics.md
+          - Chapter: modules/01-introduction-to-statistics/chapter.md
+      - M02 · Mathematical Foundations:
+          - Overview: modules/02-mathematical-foundations.md
+          - Chapter: modules/02-mathematical-foundations/chapter.md
+      - M03 · Data and Descriptive Statistics:
+          - Overview: modules/03-data-and-descriptive-statistics.md
+          - Chapter: modules/03-data-and-descriptive-statistics/chapter.md
+      - M04 · Data Visualization:
+          - Overview: modules/04-data-visualization.md
+          - Chapter: modules/04-data-visualization/chapter.md
+  - Part II — Probability:
+      - part-2-probability/index.md
+      - M05 · Counting and Combinatorics:
+          - Overview: modules/05-counting-and-combinatorics.md
+          - Chapter: modules/05-counting-and-combinatorics/chapter.md
+      - M06 · Probability Fundamentals:
+          - Overview: modules/06-probability-fundamentals.md
+          - Chapter: modules/06-probability-fundamentals/chapter.md
+      - M07 · Conditional Probability and Bayes:
+          - Overview: modules/07-conditional-probability-and-bayes.md
+          - Chapter: modules/07-conditional-probability-and-bayes/chapter.md
+  - Part III — Random variables:
+      - part-3-random-variables/index.md
+      - M08 · Random Variables and Expectation:
+          - Overview: modules/08-random-variables-and-expectation.md
+          - Chapter: modules/08-random-variables-and-expectation/chapter.md
+      - M09 · Discrete Distributions:
+          - Overview: modules/09-discrete-distributions.md
+          - Chapter: modules/09-discrete-distributions/chapter.md
+      - M10 · Continuous Distributions:
+          - Overview: modules/10-continuous-distributions.md
+          - Chapter: modules/10-continuous-distributions/chapter.md
+      - M11 · Joint Distributions:
+          - Overview: modules/11-joint-distributions.md
+          - Chapter: modules/11-joint-distributions/chapter.md
+  - Part IV — Sampling and limit theorems:
+      - part-4-sampling/index.md
+      - M12 · Sampling and Sampling Distributions:
+          - Overview: modules/12-sampling-and-sampling-distributions.md
+          - Chapter: modules/12-sampling-and-sampling-distributions/chapter.md
+      - M13 · LLN and the CLT:
+          - Overview: modules/13-law-of-large-numbers-and-clt.md
+          - Chapter: modules/13-law-of-large-numbers-and-clt/chapter.md
+  - Part V — Inference:
+      - part-5-inference/index.md
+      - M14 · Estimation and Confidence Intervals:
+          - Overview: modules/14-estimation-and-confidence-intervals.md
+          - Chapter: modules/14-estimation-and-confidence-intervals/chapter.md
+      - M15 · Hypothesis Testing:
+          - Overview: modules/15-hypothesis-testing.md
+          - Chapter: modules/15-hypothesis-testing/chapter.md
+  - Part VI — Relationships and modelling:
+      - part-6-modelling/index.md
+      - M16 · Correlation and Regression:
+          - Overview: modules/16-correlation-and-regression.md
+          - Chapter: modules/16-correlation-and-regression/chapter.md
+  - Part VII — Comparative inference:
+      - part-7-comparative/index.md
+      - M17 · ANOVA, Chi-Square and Nonparametric:
+          - Overview: modules/17-anova-chi-square-nonparametric.md
+          - Chapter: modules/17-anova-chi-square-nonparametric/chapter.md
+  - Part VIII — Modern statistics:
+      - part-8-modern/index.md
+      - M18 · Bayesian Statistics and DS Methods:
+          - Overview: modules/18-bayesian-and-data-science-methods.md
+          - Chapter: modules/18-bayesian-and-data-science-methods/chapter.md
+  - Interactive labs:
+      - labs/index.md
+      - "L-01 · Random events": labs/probability.md
+      - "L-02 · Conditional probability and Bayes": labs/conditional-probability.md
+      - "L-03 · Discrete distributions": labs/discrete-distributions.md
+      - "L-04 · Continuous distributions": labs/continuous-distributions.md
+      - "L-05 · Normal distribution and z-scores": labs/normal-and-z-scores.md
+      - "L-06 · Law of large numbers": labs/law-of-large-numbers.md
+      - "L-07 · Central Limit Theorem": labs/clt.md
+      - "L-08 · Sampling distributions": labs/sampling-distributions.md
+      - "L-09 · Confidence interval coverage": labs/confidence-intervals.md
+      - "L-10 · Hypothesis tests and p-values": labs/p-values.md
+      - "L-11 · Correlation and regression": labs/correlation-regression.md
+      - "L-12 · Bayesian updating": labs/bayesian-updating.md
+      - "L-13 · Errors and power": labs/power-and-errors.md
+      - "L-14 · ANOVA and multiple groups": labs/anova.md
+  - Python practicals:
+      - practicals/index.md
+      - Python foundation: practicals/python-foundation.md
+  - Case studies:
+      - case-studies/index.md
+      - Easy:
+          - E1 · University examination performance: case-studies/e1-exam-performance.md
+          - E2 · Attendance and achievement: case-studies/e2-attendance-achievement.md
+          - E3 · Diagnostic test accuracy: case-studies/e3-diagnostic-accuracy.md
+          - E4 · Customer satisfaction surveys: case-studies/e4-satisfaction-survey.md
+          - E5 · Manufacturing quality control: case-studies/e5-quality-control.md
+          - E6 · Cricket performance statistics: case-studies/e6-cricket-statistics.md
+          - E7 · Website response times: case-studies/e7-response-times.md
+          - E8 · Insurance claim distributions: case-studies/e8-insurance-claims.md
+      - Intermediate:
+          - I1 · Disease prevalence and Bayes: case-studies/i1-disease-prevalence-bayes.md
+          - I2 · E-commerce conversion rates: case-studies/i2-ecommerce-funnel.md
+          - I3 · Defective product detection: case-studies/i3-defect-detection.md
+          - I4 · Weather forecasting uncertainty: case-studies/i4-weather-uncertainty.md
+          - I5 · Internet packet loss: case-studies/i5-packet-loss.md
+          - I6 · Bank loan default: case-studies/i6-loan-default.md
+          - I7 · A/B testing of website designs: case-studies/i7-ab-testing.md
+          - I8 · Sports outcome probabilities: case-studies/i8-sports-outcomes.md
+      - Advanced:
+          - A1 · Epidemic spread simulation: case-studies/a1-epidemic-simulation.md
+          - A2 · Customer purchasing behaviour: case-studies/a2-customer-behaviour.md
+          - A3 · Mobile application performance: case-studies/a3-mobile-performance.md
+          - A4 · Diagnostic thresholds and ROC: case-studies/a4-screening-roc.md
+          - A5 · ML prediction uncertainty: case-studies/a5-ml-uncertainty.md
+          - A6 · Tutoring, motivation and confounding: case-studies/a6-confounding.md
+          - A7 · Process capability and control charts: case-studies/a7-process-capability.md
+          - A8 · Claim frequency modelling: case-studies/a8-claim-frequency.md
+      - Dataset files and columns: data/case-studies/README.md
+  - Projects:
+      - projects/index.md
+      - Foundation:
+          - P01 · University student performance: projects/p01-student-performance.md
+          - P02 · Healthcare diagnostic accuracy: projects/p02-diagnostics-bayes.md
+          - P03 · E-commerce conversion and A/B testing: projects/p03-ecommerce-ab-test.md
+      - Intermediate:
+          - P04 · Manufacturing quality control: projects/p04-manufacturing-quality.md
+          - P05 · Weather and distributions: projects/p05-weather-distributions.md
+          - P06 · Financial risk modelling: projects/p06-credit-risk.md
+          - P07 · Cricket and statistical inference: projects/p07-cricket-inference.md
+      - Advanced:
+          - P08 · Prediction uncertainty: projects/p08-model-uncertainty.md
+      - Capstone project: projects/p09-capstone.md
+      - Reference solutions:
+          - P01 · Student performance: projects/solutions/p01-solution.md
+          - P02 · Diagnostics and Bayes: projects/solutions/p02-solution.md
+          - P03 · E-commerce A/B test: projects/solutions/p03-solution.md
+          - P04 · Quality control: projects/solutions/p04-solution.md
+          - P05 · Weather distributions: projects/solutions/p05-solution.md
+          - P06 · Credit risk: projects/solutions/p06-solution.md
+          - P07 · Cricket inference: projects/solutions/p07-solution.md
+          - P08 · Model uncertainty: projects/solutions/p08-solution.md
+          - Capstone · Churn: projects/solutions/p09-solution.md
+      - Dataset files and columns: data/projects/README.md
+  - Assessments:
+      - assessments/index.md
+      - Module banks:
+          - M01 · Introduction to probability and statistics: assessments/m01.md
+          - M02 · Mathematical foundations: assessments/m02.md
+          - M03 · Data and descriptive statistics: assessments/m03.md
+          - M04 · Data visualization: assessments/m04.md
+          - M05 · Counting and combinatorics: assessments/m05.md
+          - M06 · Probability fundamentals: assessments/m06.md
+          - M07 · Conditional probability and Bayes: assessments/m07.md
+          - M08 · Random variables and expectation: assessments/m08.md
+          - M09 · Discrete distributions: assessments/m09.md
+          - M10 · Continuous distributions: assessments/m10.md
+          - M11 · Joint distributions: assessments/m11.md
+          - M12 · Sampling and sampling distributions: assessments/m12.md
+          - M13 · LLN and the CLT: assessments/m13.md
+          - M14 · Estimation and confidence intervals: assessments/m14.md
+          - M15 · Hypothesis testing: assessments/m15.md
+          - M16 · Correlation and regression: assessments/m16.md
+          - M17 · ANOVA, chi-square and nonparametric: assessments/m17.md
+          - M18 · Bayesian statistics and DS methods: assessments/m18.md
+      - Examinations:
+          - Mid-course revision: assessments/exams/mid-course.md
+          - Probability examination: assessments/exams/probability.md
+          - Statistics examination: assessments/exams/statistics.md
+          - Comprehensive final: assessments/exams/final.md
+          - Integrated data-science assessment: assessments/exams/data-science.md
+      - Printing practice sets: assessments/printable.md
+  - Reference:
+      - Overview: reference/index.md
+      - Notation: reference/notation.md
+      - Formula sheet — foundations: reference/formula-sheet.md
+      - Formula sheet — inference: reference/formula-sheet-inference.md
+      - Choosing a statistical test: reference/test-selection.md
+      - Statistical tables:
+          - Overview: reference/tables/index.md
+          - Standard normal: reference/tables/standard-normal.md
+          - Student's t: reference/tables/t-distribution.md
+          - Chi-square: reference/tables/chi-square.md
+          - F distribution: reference/tables/f-distribution.md
+          - Choosing a table: reference/tables/choosing-a-table.md
+      - Glossary: reference/glossary.md
+      - Revision:
+          - Revision overview: reference/revision/index.md
+          - Quick sheets: reference/revision/quick-sheets.md
+          - Identities: reference/revision/identities.md
+          - Common mistakes: reference/revision/mistakes.md
+          - Distributions: reference/revision/distributions.md
+          - Tests: reference/revision/tests.md
+          - Conceptual questions: reference/revision/questions.md
+          - Examination guide: reference/revision/exam-guide.md
+  - About:
+      - Instructor: about/instructor.md
+      - Licence and citation: about/licence.md
+
+hooks:
+  - hooks/quiz.py
+
+plugins:
+  - search:
+      lang: en
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+  # Enabling `git-revision-date-localized` requires commit history to exist.
+  # The repository has no commits until the instructor's first commit, so the
+  # plugin is added in the phase that follows it (recorded in the Phase 1 report).
+  # - git-revision-date-localized:
+  #     enable_creation_date: true
+  #     type: date
+  #     fallback_to_build_date: true
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra_css:
+  - assets/stylesheets/extra.css
+  - assets/stylesheets/assessment.css
+
+# Load order matters: mathjax.js configures window.MathJax before the library
+# loads, and labs.js expects the design-system classes from extra.css.
+extra_javascript:
+  - assets/javascripts/mathjax.js
+  - assets/javascripts/quiz.js
+  - assets/javascripts/progress.js
+  # Loads the laboratory runtime (stats, viz, labs, kit, lab module) only on
+  # pages with a <div data-lab>.
+  - assets/javascripts/labs-loader.js
+  - assets/javascripts/print-links.js
+  # Takes a copy of every ```mermaid diagram before the library loads, so the
+  # library's own auto-run cannot consume the source and leave a blank block.
+  - assets/javascripts/mermaid-init.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/nadeem-majeedch/Probability-and-Statistics
+  generator: false

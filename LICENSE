@@ -1,0 +1,56 @@
+Probability and Statistics for Data Science
+Course text, figures, exercises, quizzes and solutions
+
+Copyright (c) 2026 Engr. Dr. Muhammad Nadeem Majeed
+Department of Data Science (PUCIT), University of the Punjab, Lahore
+
+This work is licensed under the Creative Commons
+Attribution-NonCommercial-ShareAlike 4.0 International License
+(CC BY-NC-SA 4.0).
+
+The full, legally binding text of this licence is available at:
+
+    https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+
+A human-readable summary of the licence is available at:
+
+    https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+You are free to:
+
+  - Share — copy and redistribute the material in any medium or format.
+  - Adapt — remix, transform, and build upon the material.
+
+Under the following terms:
+
+  - Attribution — You must give appropriate credit, provide a link to the
+    licence, and indicate if changes were made. You may do so in any reasonable
+    manner, but not in any way that suggests the licensor endorses you or your
+    use.
+  - NonCommercial — You may not use the material for commercial purposes.
+  - ShareAlike — If you remix, transform, or build upon the material, you must
+    distribute your contributions under the same licence as the original.
+  - No additional restrictions — You may not apply legal terms or technological
+    measures that legally restrict others from doing anything the licence
+    permits.
+
+Suggested attribution:
+
+  Majeed, M. N. (2026). Probability and Statistics for Data Science.
+  Department of Data Science (PUCIT), University of the Punjab, Lahore.
+  Licensed under CC BY-NC-SA 4.0.
+
+---------------------------------------------------------------------------
+SCOPE
+
+  This licence covers the educational content of this repository: course pages,
+  figures, worked examples, exercises, quizzes, solutions and datasets created
+  for this course.
+
+  Source code — Python scripts, notebooks, the interactive lab JavaScript and
+  the site build configuration — is licensed separately under the MIT Licence.
+  See LICENSE-CODE.
+
+  Third-party datasets and figures retain their original licences, which are
+  recorded with each dataset in the course documentation and in
+  docs/about/licence.md. Nothing in this file overrides those terms.

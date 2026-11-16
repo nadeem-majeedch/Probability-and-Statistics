@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="650.16pt" height="347.334567pt" viewBox="0 0 650.16 347.334567" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 347.334567 
+L 650.16 347.334567 
+L 650.16 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 48.199355 191.70865 
+L 169.02 87.731796 
+" clip-path="url(#p7367c07efa)" style="fill: none; stroke: #1b2a41; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 169.02 87.731796 
+L 289.840645 62.342099 
+" clip-path="url(#p7367c07efa)" style="fill: none; stroke: #8c95a3; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 289.840645 62.342099 
+L 400.592903 58.715 
+" clip-path="url(#p7367c07efa)" style="fill: none; stroke-dasharray: 0.9,1.485; stroke-dashoffset: 0; stroke: #8c95a3; stroke-width: 0.9"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 289.840645 62.342099 
+L 400.592903 81.444824 
+" clip-path="url(#p7367c07efa)" style="fill: none; stroke-dasharray: 0.9,1.485; stroke-dashoffset: 0; stroke: #8c95a3; stroke-width: 0.9"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 169.02 87.731796 
+L 289.840645 101.031161 
+" clip-path="url(#p7367c07efa)" style="fill: none; stroke: #8c95a3; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 289.840645 101.031161 
+L 400.592903 104.174648 
+" clip-path="url(#p7367c07efa)" style="fill: none; stroke-dasharray: 0.9,1.485; stroke-dashoffset: 0; stroke: #8c95a3; stroke-width: 0.9"/>
+   </g>
+   <g id="line2d_7">
+    <path d="M 289.840645 101.031161 
+L 400.592903 126.904472 
+" clip-path="url(#p7367c07efa)" style="fill: none; stroke-dasharray: 0.9,1.485; stroke-dashoffset: 0; stroke: #8c95a3; stroke-width: 0.9"/>
+   </g>
+   <g id="line2d_8">
+    <path d="M 48.199355 191.70865 
+L 169.02 182.036385 
+" clip-path="url(#p7367c07efa)" style="fill: none; stroke: #1b2a41; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_9">
+    <path d="M 169.02 182.036385 
+L 289.840645 156.646688 
+" clip-path="url(#p7367c07efa)" style="fill: none; stroke: #8c95a3; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_10">
+    <path d="M 289.840645 156.646688 
+L 400.592903 149.634295 
+" clip-path="url(#p7367c07efa)" style="fill: none; stroke-dasharray: 0.9,1.485; stroke-dashoffset: 0; stroke: #8c95a3; stroke-width: 0.9"/>
+   </g>
+   <g id="line2d_11">
+    <path d="M 289.840645 156.646688 
+L 400.592903 172.364119 
+" clip-path="url(#p7367c07efa)" style="fill: none; stroke-dasharray: 0.9,1.485; stroke-dashoffset: 0; stroke: #8c95a3; stroke-width: 0.9"/>
+   </g>
+   <g id="line2d_12">
+    <path d="M 169.02 182.036385 
+L 289.840645 195.33575 
+" clip-path="url(#p7367c07efa)" style="fill: none; stroke: #8c95a3; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_13">
+    <path d="M 289.840645 195.33575 
+L 400.592903 195.093943 
+" clip-path="url(#p7367c07efa)" style="fill: none; stroke-dasharray: 0.9,1.485; stroke-dashoffset: 0; stroke: #8c95a3; stroke-width: 0.9"/>
+   </g>
+   <g id="line2d_14">
+    <path d="M 289.840645 195.33575 
+L 400.592903 217.823767 
+" clip-path="url(#p7367c07efa)" style="fill: none; stroke-dasharray: 0.9,1.485; stroke-dashoffset: 0; stroke: #8c95a3; stroke-width: 0.9"/>
+   </g>
+   <g id="line2d_15">
+    <path d="M 48.199355 191.70865 
+L 169.02 276.340974 
+" clip-path="url(#p7367c07efa)" style="fill: none; stroke: #1b2a41; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_16">
+    <path d="M 169.02 276.340974 
+L 289.840645 250.951277 
+" clip-path="url(#p7367c07efa)" style="fill: none; stroke: #8c95a3; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_17">
+    <path d="M 289.840645 250.951277 
+L 400.592903 240.553591 
+" clip-path="url(#p7367c07efa)" style="fill: none; stroke-dasharray: 0.9,1.485; stroke-dashoffset: 0; stroke: #8c95a3; stroke-width: 0.9"/>
+   </g>
+   <g id="line2d_18">
+    <path d="M 289.840645 250.951277 
+L 400.592903 263.283415 
+" clip-path="url(#p7367c07efa)" style="fill: none; stroke-dasharray: 0.9,1.485; stroke-dashoffset: 0; stroke: #8c95a3; stroke-width: 0.9"/>
+   </g>
+   <g id="line2d_19">
+    <path d="M 169.02 276.340974 
+L 289.840645 289.640339 
+" clip-path="url(#p7367c07efa)" style="fill: none; stroke: #8c95a3; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_20">
+    <path d="M 289.840645 289.640339 
+L 400.592903 286.013239 
+" clip-path="url(#p7367c07efa)" style="fill: none; stroke-dasharray: 0.9,1.485; stroke-dashoffset: 0; stroke: #8c95a3; stroke-width: 0.9"/>
+   </g>
+   <g id="line2d_21">
+    <path d="M 289.840645 289.640339 
+L 400.592903 308.743063 
+" clip-path="url(#p7367c07efa)" style="fill: none; stroke-dasharray: 0.9,1.485; stroke-dashoffset: 0; stroke: #8c95a3; stroke-width: 0.9"/>
+   </g>
+   <g id="PathCollection_1">
+    <defs>
+     <path id="ma6334b3058" d="M 0 3.391165 
+C 0.899347 3.391165 1.761981 3.03385 2.397916 2.397916 
+C 3.03385 1.761981 3.391165 0.899347 3.391165 0 
+C 3.391165 -0.899347 3.03385 -1.761981 2.397916 -2.397916 
+C 1.761981 -3.03385 0.899347 -3.391165 0 -3.391165 
+C -0.899347 -3.391165 -1.761981 -3.03385 -2.397916 -2.397916 
+C -3.03385 -1.761981 -3.391165 -0.899347 -3.391165 0 
+C -3.391165 0.899347 -3.03385 1.761981 -2.397916 2.397916 
+C -1.761981 3.03385 -0.899347 3.391165 0 3.391165 
+z
+" style="stroke: #2a7f8f"/>
+    </defs>
+    <g clip-path="url(#p7367c07efa)">
+     <use xlink:href="#ma6334b3058" x="169.02" y="87.731796" style="fill: #2a7f8f; stroke: #2a7f8f"/>
+    </g>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #1b2a41" x="156.937935" y="76.850497" transform="rotate(-0 156.937935 76.850497)">burger</text>
+   </g>
+   <g id="PathCollection_2">
+    <defs>
+     <path id="m86e9aed63f" d="M 0 2.915476 
+C 0.773193 2.915476 1.514823 2.608283 2.061553 2.061553 
+C 2.608283 1.514823 2.915476 0.773193 2.915476 0 
+C 2.915476 -0.773193 2.608283 -1.514823 2.061553 -2.061553 
+C 1.514823 -2.608283 0.773193 -2.915476 0 -2.915476 
+C -0.773193 -2.915476 -1.514823 -2.608283 -2.061553 -2.061553 
+C -2.608283 -1.514823 -2.915476 -0.773193 -2.915476 0 
+C -2.915476 0.773193 -2.608283 1.514823 -2.061553 2.061553 
+C -1.514823 2.608283 -0.773193 2.915476 0 2.915476 
+z
+" style="stroke: #b58a1f"/>
+    </defs>
+    <g clip-path="url(#p7367c07efa)">
+     <use xlink:href="#m86e9aed63f" x="289.840645" y="62.342099" style="fill: #b58a1f; stroke: #b58a1f"/>
+    </g>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1b2a41" x="297.895355" y="57.505966" transform="rotate(-0 297.895355 57.505966)">fries</text>
+   </g>
+   <g id="PathCollection_3">
+    <defs>
+     <path id="mc96d87bc62" d="M 0 2.44949 
+C 0.649612 2.44949 1.272706 2.191396 1.732051 1.732051 
+C 2.191396 1.272706 2.44949 0.649612 2.44949 0 
+C 2.44949 -0.649612 2.191396 -1.272706 1.732051 -1.732051 
+C 1.272706 -2.191396 0.649612 -2.44949 0 -2.44949 
+C -0.649612 -2.44949 -1.272706 -2.191396 -1.732051 -1.732051 
+C -2.191396 -1.272706 -2.44949 -0.649612 -2.44949 0 
+C -2.44949 0.649612 -2.191396 1.272706 -1.732051 1.732051 
+C -1.272706 2.191396 -0.649612 2.44949 0 2.44949 
+z
+" style="stroke: #1b2a41; stroke-width: 0.6"/>
+    </defs>
+    <g clip-path="url(#p7367c07efa)">
+     <use xlink:href="#mc96d87bc62" x="400.592903" y="58.715" style="fill: #9db4c0; stroke: #1b2a41; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 8.6px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1b2a41" x="412.674968" y="60.94932" transform="rotate(-0 412.674968 60.94932)">burger + fries + water</text>
+   </g>
+   <g id="PathCollection_4">
+    <g clip-path="url(#p7367c07efa)">
+     <use xlink:href="#mc96d87bc62" x="400.592903" y="81.444824" style="fill: #9db4c0; stroke: #1b2a41; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 8.6px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1b2a41" x="412.674968" y="83.679144" transform="rotate(-0 412.674968 83.679144)">burger + fries + juice</text>
+   </g>
+   <g id="PathCollection_5">
+    <g clip-path="url(#p7367c07efa)">
+     <use xlink:href="#m86e9aed63f" x="289.840645" y="101.031161" style="fill: #b58a1f; stroke: #b58a1f"/>
+    </g>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1b2a41" x="297.895355" y="96.195029" transform="rotate(-0 297.895355 96.195029)">salad</text>
+   </g>
+   <g id="PathCollection_6">
+    <g clip-path="url(#p7367c07efa)">
+     <use xlink:href="#mc96d87bc62" x="400.592903" y="104.174648" style="fill: #9db4c0; stroke: #1b2a41; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 8.6px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1b2a41" x="412.674968" y="106.408968" transform="rotate(-0 412.674968 106.408968)">burger + salad + water</text>
+   </g>
+   <g id="PathCollection_7">
+    <g clip-path="url(#p7367c07efa)">
+     <use xlink:href="#mc96d87bc62" x="400.592903" y="126.904472" style="fill: #9db4c0; stroke: #1b2a41; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 8.6px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1b2a41" x="412.674968" y="129.138792" transform="rotate(-0 412.674968 129.138792)">burger + salad + juice</text>
+   </g>
+   <g id="PathCollection_8">
+    <g clip-path="url(#p7367c07efa)">
+     <use xlink:href="#ma6334b3058" x="169.02" y="182.036385" style="fill: #2a7f8f; stroke: #2a7f8f"/>
+    </g>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #1b2a41" x="156.937935" y="171.155086" transform="rotate(-0 156.937935 171.155086)">chicken</text>
+   </g>
+   <g id="PathCollection_9">
+    <g clip-path="url(#p7367c07efa)">
+     <use xlink:href="#m86e9aed63f" x="289.840645" y="156.646688" style="fill: #b58a1f; stroke: #b58a1f"/>
+    </g>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1b2a41" x="297.895355" y="151.810555" transform="rotate(-0 297.895355 151.810555)">fries</text>
+   </g>
+   <g id="PathCollection_10">
+    <g clip-path="url(#p7367c07efa)">
+     <use xlink:href="#mc96d87bc62" x="400.592903" y="149.634295" style="fill: #9db4c0; stroke: #1b2a41; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 8.6px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1b2a41" x="412.674968" y="151.868616" transform="rotate(-0 412.674968 151.868616)">chicken + fries + water</text>
+   </g>
+   <g id="PathCollection_11">
+    <g clip-path="url(#p7367c07efa)">
+     <use xlink:href="#mc96d87bc62" x="400.592903" y="172.364119" style="fill: #9db4c0; stroke: #1b2a41; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 8.6px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1b2a41" x="412.674968" y="174.59844" transform="rotate(-0 412.674968 174.59844)">chicken + fries + juice</text>
+   </g>
+   <g id="PathCollection_12">
+    <g clip-path="url(#p7367c07efa)">
+     <use xlink:href="#m86e9aed63f" x="289.840645" y="195.33575" style="fill: #b58a1f; stroke: #b58a1f"/>
+    </g>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1b2a41" x="297.895355" y="190.499617" transform="rotate(-0 297.895355 190.499617)">salad</text>
+   </g>
+   <g id="PathCollection_13">
+    <g clip-path="url(#p7367c07efa)">
+     <use xlink:href="#mc96d87bc62" x="400.592903" y="195.093943" style="fill: #9db4c0; stroke: #1b2a41; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 8.6px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1b2a41" x="412.674968" y="197.328264" transform="rotate(-0 412.674968 197.328264)">chicken + salad + water</text>
+   </g>
+   <g id="PathCollection_14">
+    <g clip-path="url(#p7367c07efa)">
+     <use xlink:href="#mc96d87bc62" x="400.592903" y="217.823767" style="fill: #9db4c0; stroke: #1b2a41; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 8.6px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1b2a41" x="412.674968" y="220.058088" transform="rotate(-0 412.674968 220.058088)">chicken + salad + juice</text>
+   </g>
+   <g id="PathCollection_15">
+    <g clip-path="url(#p7367c07efa)">
+     <use xlink:href="#ma6334b3058" x="169.02" y="276.340974" style="fill: #2a7f8f; stroke: #2a7f8f"/>
+    </g>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #1b2a41" x="156.937935" y="265.459675" transform="rotate(-0 156.937935 265.459675)">veg</text>
+   </g>
+   <g id="PathCollection_16">
+    <g clip-path="url(#p7367c07efa)">
+     <use xlink:href="#m86e9aed63f" x="289.840645" y="250.951277" style="fill: #b58a1f; stroke: #b58a1f"/>
+    </g>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1b2a41" x="297.895355" y="246.115144" transform="rotate(-0 297.895355 246.115144)">fries</text>
+   </g>
+   <g id="PathCollection_17">
+    <g clip-path="url(#p7367c07efa)">
+     <use xlink:href="#mc96d87bc62" x="400.592903" y="240.553591" style="fill: #9db4c0; stroke: #1b2a41; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 8.6px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1b2a41" x="412.674968" y="242.787912" transform="rotate(-0 412.674968 242.787912)">veg + fries + water</text>
+   </g>
+   <g id="PathCollection_18">
+    <g clip-path="url(#p7367c07efa)">
+     <use xlink:href="#mc96d87bc62" x="400.592903" y="263.283415" style="fill: #9db4c0; stroke: #1b2a41; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 8.6px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1b2a41" x="412.674968" y="265.517736" transform="rotate(-0 412.674968 265.517736)">veg + fries + juice</text>
+   </g>
+   <g id="PathCollection_19">
+    <g clip-path="url(#p7367c07efa)">
+     <use xlink:href="#m86e9aed63f" x="289.840645" y="289.640339" style="fill: #b58a1f; stroke: #b58a1f"/>
+    </g>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1b2a41" x="297.895355" y="284.804206" transform="rotate(-0 297.895355 284.804206)">salad</text>
+   </g>
+   <g id="PathCollection_20">
+    <g clip-path="url(#p7367c07efa)">
+     <use xlink:href="#mc96d87bc62" x="400.592903" y="286.013239" style="fill: #9db4c0; stroke: #1b2a41; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 8.6px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1b2a41" x="412.674968" y="288.24756" transform="rotate(-0 412.674968 288.24756)">veg + salad + water</text>
+   </g>
+   <g id="PathCollection_21">
+    <g clip-path="url(#p7367c07efa)">
+     <use xlink:href="#mc96d87bc62" x="400.592903" y="308.743063" style="fill: #9db4c0; stroke: #1b2a41; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 8.6px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1b2a41" x="412.674968" y="310.977383" transform="rotate(-0 412.674968 310.977383)">veg + salad + juice</text>
+   </g>
+   <g id="text_22">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1b2a41" x="43.165161" y="185.663485" transform="rotate(-0 43.165161 185.663485)">start</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #8c95a3" x="169.02" y="321.075202" transform="rotate(-0 169.02 321.075202)">3 mains</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #8c95a3" x="289.840645" y="321.075202" transform="rotate(-0 289.840645 321.075202)">× 2 sides</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #8c95a3" x="455.969032" y="321.075202" transform="rotate(-0 455.969032 321.075202)">× 2 drinks</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 9.6px; font-family: 'DejaVu Sans'; fill: #b23a48" transform="translate(521.413548 157.217959)">multiply along</text>
+    <text style="font-size: 9.6px; font-family: 'DejaVu Sans'; fill: #b23a48" transform="translate(521.413548 168.740584)">the branches</text>
+    <text style="font-size: 9.6px; font-family: 'DejaVu Sans'; fill: #b23a48" transform="translate(521.413548 180.262459)"/>
+    <text style="font-size: 9.6px; font-family: 'DejaVu Sans'; fill: #b23a48" transform="translate(521.413548 191.784334)">3 × 2 × 2 = 12</text>
+    <text style="font-size: 9.6px; font-family: 'DejaVu Sans'; fill: #b23a48" transform="translate(521.413548 203.306209)"/>
+    <text style="font-size: 9.6px; font-family: 'DejaVu Sans'; fill: #b23a48" transform="translate(521.413548 214.828834)">each leaf is one</text>
+    <text style="font-size: 9.6px; font-family: 'DejaVu Sans'; fill: #b23a48" transform="translate(521.413548 226.351459)">reachable combo</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 11.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1b2a41" x="325.08" y="21.698203" transform="rotate(-0 325.08 21.698203)">Counting tree: 3 mains × 2 sides × 2 drinks = 12 orders</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p7367c07efa">
+   <rect x="12.96" y="29.698203" width="624.24" height="304.676364"/>
+  </clipPath>
+ </defs>
+</svg>

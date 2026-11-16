@@ -1,0 +1,1082 @@
+/* ==========================================================================
+   Probability and Statistics for Data Science — design system
+   All visual customisation lives here. No theme-file overrides, so a theme
+   upgrade (or a move to a successor) does not silently break the course.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Palette tokens
+   -------------------------------------------------------------------------- */
+
+:root {
+  --psds-primary: #1e3a8a;
+  --psds-primary-light: #3b5bc0;
+  --psds-primary-dark: #14265e;
+  --psds-accent: #0f766e;
+  --psds-accent-soft: #e6f4f2;
+  --psds-bg: #ffffff;
+  --psds-surface: #f5f7fb;
+  --psds-border: #e2e8f0;
+  --psds-text: #1a2233;
+  --psds-text-muted: #5b6577;
+  --psds-success: #15803d;
+  --psds-warning: #b45309;
+  --psds-danger: #b91c1c;
+  --psds-radius: 0.65rem;
+}
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: var(--psds-primary);
+  --md-primary-fg-color--light: var(--psds-primary-light);
+  --md-primary-fg-color--dark: var(--psds-primary-dark);
+  --md-accent-fg-color: var(--psds-accent);
+  --md-typeset-a-color: var(--psds-accent);
+  --md-default-bg-color: var(--psds-bg);
+  --md-code-bg-color: var(--psds-surface);
+  --md-typeset-color: var(--psds-text);
+}
+
+[data-md-color-scheme="slate"] {
+  --psds-primary: #8fa8ff;
+  --psds-primary-light: #a9bcff;
+  --psds-primary-dark: #6b86e6;
+  --psds-accent: #2dd4bf;
+  --psds-accent-soft: #0d2a2a;
+  --psds-bg: #0b1220;
+  --psds-surface: #111a2b;
+  --psds-border: #1e2a3d;
+  --psds-text: #e6edf7;
+  --psds-text-muted: #a3b0c2;
+  --psds-success: #4ade80;
+  --psds-warning: #fbbf24;
+  --psds-danger: #f87171;
+
+  --md-default-bg-color: var(--psds-bg);
+  --md-default-fg-color: var(--psds-text);
+  --md-code-bg-color: var(--psds-surface);
+  --md-typeset-color: var(--psds-text);
+  --md-accent-fg-color: var(--psds-accent);
+  --md-typeset-a-color: var(--psds-accent);
+  --md-default-bg-color--light: #0e1728;
+  --md-default-bg-color--lighter: #111a2b;
+}
+
+[data-md-color-scheme="slate"] .md-header,
+[data-md-color-scheme="slate"] .md-tabs {
+  background-color: #0e1728;
+}
+
+/* --------------------------------------------------------------------------
+   2. Typography and measure
+   -------------------------------------------------------------------------- */
+
+.md-typeset {
+  font-size: 0.82rem;
+  line-height: 1.68;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media screen and (min-width: 76.25em) {
+  .md-typeset {
+    font-size: 0.86rem;
+  }
+}
+
+.md-typeset h1 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin-bottom: 0.8rem;
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-top: 2.2rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--psds-border);
+}
+
+.md-typeset h3 {
+  font-weight: 600;
+  margin-top: 1.7rem;
+}
+
+/* Readability: cap the measure for body text. Tables, grids and code keep
+   their own widths so this cannot break a layout. */
+.md-typeset > p,
+.md-typeset > ul,
+.md-typeset > ol,
+.md-typeset > blockquote {
+  max-width: 46rem;
+}
+
+.md-typeset table:not([class]) {
+  font-size: 0.76rem;
+  border: 1px solid var(--psds-border);
+  border-radius: var(--psds-radius);
+  overflow: hidden;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--psds-surface);
+  font-weight: 600;
+  text-align: left;
+}
+
+/* Numeric columns read better right-aligned; authors opt in with {: .psds-num } */
+.md-typeset th.psds-num,
+.md-typeset td.psds-num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.md-typeset code {
+  font-size: 0.8em;
+  border-radius: 0.25rem;
+}
+
+/* Focus visibility — WCAG 2.4.7 */
+:focus-visible {
+  outline: 2px solid var(--psds-accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   3. Homepage hero
+   -------------------------------------------------------------------------- */
+
+.psds-hero {
+  padding: 1.2rem 0 1.4rem;
+  border-bottom: 1px solid var(--psds-border);
+  margin-bottom: 1.4rem;
+}
+
+.psds-hero h1 {
+  font-size: clamp(1.7rem, 4vw, 2.4rem);
+  line-height: 1.12;
+  margin: 0 0 0.8rem;
+  max-width: 34ch;
+}
+
+.psds-hero__lede {
+  font-size: 1.02rem;
+  line-height: 1.6;
+  color: var(--psds-text-muted);
+  max-width: 46rem;
+  margin: 0 0 1rem;
+}
+
+.psds-hero__meta {
+  font-size: 0.78rem;
+  color: var(--psds-text-muted);
+  margin: 0 0 1.2rem;
+}
+
+.psds-hero .md-button {
+  margin: 0 0.5rem 0.4rem 0;
+}
+
+/* Stat strip ------------------------------------------------------------- */
+
+.psds-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+  gap: 0.7rem;
+  margin: 0 0 2rem;
+}
+
+.psds-stat {
+  background: var(--psds-surface);
+  border: 1px solid var(--psds-border);
+  border-radius: var(--psds-radius);
+  padding: 0.7rem 0.85rem;
+}
+
+.psds-stat__value {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--psds-text);
+}
+
+.psds-stat__label {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--psds-text-muted);
+  margin-top: 0.1rem;
+}
+
+/* --------------------------------------------------------------------------
+   4. Cards and grids
+   -------------------------------------------------------------------------- */
+
+.psds-grid {
+  display: grid;
+  gap: 0.9rem;
+  margin: 1.2rem 0 1.6rem;
+}
+
+.psds-grid--2 {
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+}
+
+.psds-grid--3 {
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+}
+
+.psds-card {
+  border: 1px solid var(--psds-border);
+  border-radius: var(--psds-radius);
+  padding: 1rem 1.1rem;
+  background: var(--md-default-bg-color);
+  transition: border-color 120ms ease, transform 120ms ease;
+}
+
+.psds-card:hover {
+  border-color: var(--psds-accent);
+}
+
+.psds-card--plain {
+  background: var(--psds-surface);
+}
+
+.psds-card__eyebrow {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--psds-accent);
+  margin: 0 0 0.35rem;
+}
+
+.psds-card h3 {
+  margin: 0.1rem 0 0.5rem;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.psds-card p {
+  margin: 0 0 0.6rem;
+  font-size: 0.82rem;
+}
+
+.psds-card p:last-child {
+  margin-bottom: 0;
+}
+
+.psds-chip {
+  display: inline-block;
+  font-size: 0.66rem;
+  font-weight: 600;
+  padding: 0.12rem 0.5rem;
+  margin: 0 0.25rem 0.35rem 0;
+  border-radius: 1rem;
+  border: 1px solid var(--psds-border);
+  background: var(--psds-surface);
+  color: var(--psds-text-muted);
+  white-space: nowrap;
+}
+
+.psds-chip--beginner { color: var(--psds-success); border-color: currentColor; }
+.psds-chip--core     { color: var(--psds-accent); border-color: currentColor; }
+.psds-chip--advanced { color: var(--psds-warning); border-color: currentColor; }
+
+/* Module header meta strip */
+.psds-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0 0 1.4rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--psds-border);
+}
+
+.psds-meta .psds-chip {
+  margin: 0;
+}
+
+.psds-footer-note {
+  font-size: 0.74rem;
+  color: var(--psds-text-muted);
+  border-top: 1px solid var(--psds-border);
+  padding-top: 0.8rem;
+}
+
+/* --------------------------------------------------------------------------
+   5. Interactive labs
+   -------------------------------------------------------------------------- */
+
+.psds-lab {
+  border: 1px solid var(--psds-border);
+  border-radius: 0.8rem;
+  background: var(--psds-surface);
+  padding: 1rem;
+  margin: 1.6rem 0;
+}
+
+.psds-lab__instruction {
+  font-size: 0.82rem;
+  margin: 0 0 0.9rem;
+  padding-left: 0.7rem;
+  border-left: 3px solid var(--psds-accent);
+}
+
+.psds-lab__grid {
+  display: grid;
+  grid-template-columns: minmax(11rem, 15rem) minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+@media screen and (max-width: 44rem) {
+  .psds-lab__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.psds-lab__controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  font-size: 0.78rem;
+}
+
+.psds-field {
+  display: block;
+}
+
+.psds-field__label {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.psds-field__value {
+  font-family: var(--md-code-font-family), monospace;
+  font-weight: 400;
+  color: var(--psds-accent);
+  font-variant-numeric: tabular-nums;
+}
+
+.psds-field select,
+.psds-field input[type="range"] {
+  width: 100%;
+}
+
+.psds-field select {
+  padding: 0.35rem 0.45rem;
+  border: 1px solid var(--psds-border);
+  border-radius: 0.35rem;
+  background: var(--md-default-bg-color);
+  color: var(--psds-text);
+  font-size: 0.78rem;
+}
+
+.psds-field input[type="range"] {
+  accent-color: var(--psds-accent);
+  height: 1.2rem;
+}
+
+.psds-lab__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.2rem;
+}
+
+.psds-btn {
+  font: inherit;
+  font-size: 0.76rem;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.4rem;
+  border: 1px solid var(--psds-primary);
+  background: var(--psds-primary);
+  color: #fff;
+  cursor: pointer;
+}
+
+.psds-btn:hover {
+  filter: brightness(1.08);
+}
+
+.psds-btn--ghost {
+  background: transparent;
+  color: var(--psds-text);
+  border-color: var(--psds-border);
+}
+
+.psds-lab__figure {
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--psds-border);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  min-height: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+/* The chart owns the full figure width; the legend and the results table sit
+   underneath it instead of competing with it for horizontal space. Without
+   this the SVG is a shrinking flex item and collapses to a few pixels wide on
+   a phone. */
+.psds-lab__figure > [data-role="chart"],
+.psds-lab__figure > .psds-chart {
+  width: 100%;
+}
+
+.psds-chart {
+  display: block;
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* On a phone the figure is about 17rem across. Scaling a 40rem-wide chart into
+   that makes the axis labels illegible, so the chart keeps a readable width and
+   the figure scrolls sideways instead. The page itself never overflows. */
+@media screen and (max-width: 44rem) {
+  .psds-lab__figure {
+    min-width: 0;
+  }
+
+  .psds-lab__figure > [data-role="chart"] {
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+  }
+
+  .psds-chart {
+    min-width: 32rem;
+  }
+}
+
+.psds-lab__fallback {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.psds-lab__caption {
+  font-size: 0.7rem;
+  color: var(--psds-text-muted);
+  margin: 0.4rem 0 0;
+  text-align: center;
+}
+
+.psds-lab__readout {
+  font-family: var(--md-code-font-family), monospace;
+  font-size: 0.72rem;
+  color: var(--psds-text);
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--psds-border);
+  border-radius: 0.35rem;
+  padding: 0.45rem 0.6rem;
+  margin: 0.9rem 0 0.4rem;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.psds-lab__hint {
+  font-size: 0.78rem;
+  color: var(--psds-text-muted);
+  margin: 0;
+  min-height: 1.2em;
+}
+
+/* Chart internals (SVG created by labs.js) */
+.psds-chart .axis line,
+.psds-chart .axis path {
+  stroke: var(--psds-text-muted);
+  stroke-width: 1;
+}
+
+.psds-chart .axis text {
+  fill: var(--psds-text-muted);
+  font-size: 10px;
+  font-family: var(--md-code-font-family), monospace;
+}
+
+.psds-chart .grid line {
+  stroke: var(--psds-border);
+  stroke-width: 1;
+}
+
+.psds-chart .bar {
+  fill: var(--psds-primary);
+  opacity: 0.55;
+}
+
+.psds-chart .curve {
+  fill: none;
+  stroke: var(--psds-accent);
+  stroke-width: 2;
+}
+
+.psds-chart .reference {
+  stroke: var(--psds-warning);
+  stroke-width: 1.5;
+  stroke-dasharray: 4 3;
+}
+
+.psds-chart .interval {
+  stroke: var(--psds-primary);
+  stroke-width: 2;
+}
+
+.psds-chart .interval--miss {
+  stroke: var(--psds-danger);
+  stroke-width: 2;
+}
+
+.psds-chart .label {
+  fill: var(--psds-text-muted);
+  font-size: 10px;
+}
+
+/* Additional marks used by the full laboratory set (L-01 to L-14). */
+.psds-chart .label--strong {
+  fill: var(--psds-text);
+  font-weight: 600;
+}
+
+.psds-chart .dot {
+  fill: var(--psds-text);
+  opacity: 0.75;
+}
+
+.psds-chart .dot--accent {
+  fill: var(--psds-warning);
+  opacity: 1;
+}
+
+.psds-chart .area {
+  fill: var(--psds-accent);
+  opacity: 0.3;
+  stroke: none;
+}
+
+.psds-chart .area--faint {
+  fill: var(--psds-accent);
+  opacity: 0.15;
+}
+
+.psds-chart .area--accent {
+  fill: var(--psds-danger);
+  opacity: 0.35;
+}
+
+.psds-chart .area--beta {
+  fill: var(--psds-warning);
+  opacity: 0.35;
+}
+
+.psds-chart .bar--faint {
+  fill: var(--psds-text-muted);
+  opacity: 0.18;
+}
+
+.psds-chart .bar--band {
+  fill: var(--psds-accent);
+  opacity: 0.5;
+}
+
+.psds-chart .curve--true {
+  stroke: var(--psds-warning);
+  stroke-dasharray: 5 4;
+}
+
+.psds-chart .curve--prior {
+  stroke: var(--psds-text-muted);
+  stroke-dasharray: 4 3;
+}
+
+.psds-chart .curve--h1 {
+  stroke: var(--psds-warning);
+}
+
+.psds-chart .reference--accent {
+  stroke: var(--psds-danger);
+}
+
+.psds-chart .reference--grand {
+  stroke: var(--psds-accent);
+  stroke-dasharray: 6 4;
+}
+
+.psds-chart .mosaic {
+  stroke: var(--md-default-bg-color);
+  stroke-width: 1;
+}
+
+.psds-chart .mosaic--accent {
+  fill: var(--psds-danger);
+  opacity: 0.7;
+}
+
+.psds-chart .mosaic--accent-soft {
+  fill: var(--psds-danger);
+  opacity: 0.3;
+}
+
+.psds-chart .mosaic--teal {
+  fill: var(--psds-primary);
+  opacity: 0.55;
+}
+
+.psds-chart .mosaic--teal-soft {
+  fill: var(--psds-primary);
+  opacity: 0.22;
+}
+
+/* Results panel and legend beneath a lab figure. */
+.psds-results {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.15rem 0.7rem;
+  margin: 0.8rem 0 0;
+  font-size: 0.72rem;
+}
+
+.psds-results dt {
+  color: var(--psds-text-muted);
+  margin: 0;
+}
+
+.psds-results dd {
+  margin: 0;
+  font-family: var(--md-code-font-family), monospace;
+  color: var(--psds-text);
+}
+
+.psds-results__note {
+  color: var(--psds-text-muted);
+}
+
+.psds-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 1rem;
+  margin: 0.5rem 0 0;
+  font-size: 0.68rem;
+  color: var(--psds-text-muted);
+}
+
+.psds-legend__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.psds-legend__swatch {
+  display: inline-block;
+  width: 0.85rem;
+  height: 0.35rem;
+  border-radius: 2px;
+  background: var(--psds-primary);
+}
+
+.psds-legend__swatch--teal {
+  background: var(--psds-accent);
+}
+
+.psds-legend__swatch--accent {
+  background: var(--psds-warning);
+}
+
+.psds-legend__swatch--band {
+  background: var(--psds-primary);
+  opacity: 0.4;
+}
+
+.psds-legend__swatch--ink {
+  background: var(--psds-text);
+}
+
+.psds-legend__item--dot .psds-legend__swatch {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+}
+
+/* --------------------------------------------------------------------------
+   6. Progress control
+   -------------------------------------------------------------------------- */
+
+.psds-progress {
+  margin: 0 0 1.2rem;
+  font-size: 0.78rem;
+}
+
+.psds-progress__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.3rem 0.7rem;
+  border: 1px solid var(--psds-border);
+  border-radius: 1rem;
+  background: var(--psds-surface);
+  cursor: pointer;
+  user-select: none;
+}
+
+.psds-progress input[type="checkbox"] {
+  margin: 0;
+  accent-color: var(--psds-accent);
+}
+
+.psds-lab noscript p {
+  font-size: 0.76rem;
+  color: var(--psds-text-muted);
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   7. Print
+   -------------------------------------------------------------------------- */
+
+@media print {
+  /* A consistent page box. Page numbers and the running title come from the
+     browser's own header/footer, which the reader can switch off. */
+  @page {
+    margin: 15mm 12mm;
+  }
+
+  /* Navigation chrome and interactive controls never print. */
+  .md-header,
+  .md-sidebar,
+  .md-footer,
+  .md-search,
+  .md-path,
+  .md-top,
+  .md-content__button,
+  .psds-lab__controls,
+  .psds-lab__buttons,
+  .psds-lab__hint,
+  .md-typeset input,
+  .md-typeset select,
+  .md-typeset textarea,
+  .md-typeset button {
+    display: none !important;
+  }
+
+  .psds-lab,
+  .psds-card,
+  .psds-stat {
+    border: 1px solid #999;
+    background: #fff !important;
+    break-inside: avoid;
+  }
+
+  .md-typeset {
+    color: #000;
+    font-size: 10.5pt;
+  }
+
+  /* Headings must not be left stranded at the foot of a page, but a document
+     should not open with a blank page either: the old `h1 { break-before: page }`
+     pushed every title onto page 2 behind an otherwise empty first page. */
+  .md-typeset h1,
+  .md-typeset h2,
+  .md-typeset h3,
+  .md-typeset h4 {
+    break-after: avoid;
+  }
+
+  /* Print the destination of external links only: internal relative URLs such
+     as "../10-continuous-distributions/chapter/" are unreadable on paper and
+     add noise to every paragraph of a printed chapter. */
+  .md-typeset a[data-psds-external]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.75em;
+    color: #555;
+  }
+
+  /* Critical-value tables: print the whole grid, not a scrolled window, repeat
+     the header on every page, and keep each row in one piece. */
+  /* No element may keep a scroll window on paper: a scrollbar prints as a
+     grey bar with arrows, and everything outside the window is lost. */
+  .psds-table-scroll,
+  .md-typeset__table,
+  .md-typeset__scrollwrap,
+  .md-typeset .md-typeset__table,
+  .md-typeset mjx-container,
+  .psds-lab__figure,
+  .psds-lab__figure * {
+    overflow: visible !important;
+    max-height: none !important;
+  }
+
+  .psds-table-scroll {
+    border: 1px solid #999;
+    break-inside: auto;
+  }
+
+  .md-typeset mjx-container[display="true"] {
+    overflow-x: visible !important;
+  }
+
+  /* Inline maths: a span with overflow:auto and MathJax's line-height:0 has no
+     height on paper, so the formula floated above the line and Chrome drew a
+     scrollbar in its place. Printed lines cannot scroll, so drop the box. */
+  .md-typeset span.arithmatex {
+    display: inline !important;
+    overflow: visible !important;
+    max-width: none !important;
+  }
+
+  /* Inline maths must keep its own box on paper: a collapsed inline container
+     makes the formula float out of its line and leaves a scrollbar behind. */
+  .md-typeset mjx-container:not([display="true"]),
+  .md-typeset mjx-container:not([display="true"]) > mjx-math {
+    display: inline-block !important;
+    overflow: visible !important;
+    line-height: normal !important;
+  }
+
+  /* The on-screen grid is wider than any page: nowrap cells plus a scroll
+     wrapper. On paper the wrapper cannot scroll, so the grid is re-laid out to
+     the page width (fixed layout, wrapping cells) instead of losing columns off
+     the right edge. The !important flags beat the more specific screen rules. */
+  .md-typeset .psds-table-scroll table {
+    width: 100% !important;
+    table-layout: fixed !important;
+    font-size: 6pt !important;
+  }
+
+  .md-typeset .psds-table-scroll table th,
+  .md-typeset .psds-table-scroll table td {
+    padding: 1pt 1.5pt !important;
+    white-space: normal !important;
+  }
+
+  .psds-table-scroll thead {
+    display: table-header-group;
+  }
+
+  .psds-table-scroll tr {
+    break-inside: avoid;
+  }
+
+  .psds-table-scroll th,
+  .psds-table-scroll td {
+    padding: 1pt 3pt;
+  }
+
+  .psds-table-scroll th:first-child,
+  .psds-table-scroll td:first-child {
+    position: static;
+    box-shadow: none;
+  }
+
+  .md-typeset details[open] > summary ~ * {
+    display: block;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   8. Reduced motion
+   -------------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   MathJax unavailable (offline reader, blocked CDN)
+   The raw TeX is still in the page — \\(E = \\mu\\) and so on — because MathJax
+   replaces it only when it loads. Setting it in the code face keeps the
+   mathematics legible instead of leaving it as prose with stray backslashes.
+   mathjax.js adds the class only when the library never arrives.
+   -------------------------------------------------------------------------- */
+
+body.psds-no-mathjax .arithmatex {
+  font-family: var(--md-code-font, monospace), monospace;
+  font-size: 0.92em;
+  background: var(--psds-accent-soft);
+  border-radius: 3px;
+  padding: 0 2px;
+}
+
+/* Rendered Mermaid diagrams: never wider than the column, centred like a
+   figure. mermaid-init.js gives each diagram an id starting with psds-diagram. */
+.md-typeset svg[id^="psds-diagram-"] {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+body.psds-no-mathjax .arithmatex--block {
+  display: block;
+  padding: 0.4em 0.6em;
+  overflow-x: auto;
+}
+
+/* --------------------------------------------------------------------------
+   9. Figures
+   Vector figures must never overflow their column: on a phone the page width
+   is the limit, so every image scales down and keeps its aspect ratio.
+   -------------------------------------------------------------------------- */
+
+.md-typeset img {
+  max-width: 100%;
+  height: auto;
+}
+
+.md-typeset p > img,
+.md-typeset p > a > img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Figures open at full vector size when tapped, which is how a phone user
+   reads the small annotations in a dense multi-panel chart. */
+.md-typeset p > a { cursor: zoom-in; }
+
+/* Figure captions sit directly under the image, in the text colour but quiet. */
+.md-typeset p > em:only-child {
+  display: block;
+}
+
+/* --------------------------------------------------------------------------
+   10. Wide display maths and wide tables
+   A long displayed equation cannot be narrowed without changing its meaning,
+   so it scrolls inside its own box instead of pushing the page sideways.
+   -------------------------------------------------------------------------- */
+
+.md-typeset mjx-container[display="true"] {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 0.15rem;
+}
+
+/* MathJax keeps a screen-reader copy of every formula, positioned out of the
+   flow. Its layout box is still full width, which pushed the document ~10 px
+   past the viewport on tablet widths. Box it to the 1x1 clip MathJax intends:
+   assistive technology still reads the MathML, sighted readers never see it. */
+.md-typeset mjx-assistive-mml {
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* At drawer widths the navigation pane is off-canvas; a long page title in it
+   must not widen the document either. */
+@media screen and (max-width: 959px) {
+  .md-sidebar__scrollwrap {
+    overflow-x: hidden;
+  }
+}
+
+.md-typeset .md-typeset__table {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* --------------------------------------------------------------------------
+   10b. Statistical tables (reference/tables)
+   The critical-value grids are wide: they scroll inside their own frame, keep
+   the row labels visible while they do, and print at a size that fits a page.
+   -------------------------------------------------------------------------- */
+
+.psds-table-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  border: 1px solid var(--psds-border);
+  border-radius: var(--psds-radius);
+  margin: 0.8rem 0;
+}
+
+/* The selectors name the table inside the wrapper so that they beat the site's
+   generic `.md-typeset table:not([class])` rules, which otherwise restore the
+   generous page padding and make a 20-column grid twice as wide as it needs to be. */
+.md-typeset .psds-table-scroll table:not([class]) {
+  display: table;
+  width: auto;          /* size to the grid, not to the column of text */
+  margin: 0;
+  border: 0;
+  overflow: visible;    /* the wrapper does the clipping and scrolling */
+  font-size: 0.72rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.md-typeset .psds-table-scroll table th,
+.md-typeset .psds-table-scroll table td {
+  padding: 0.22rem 0.45rem;
+  white-space: nowrap;
+}
+
+/* Row labels stay put when a 70-row table is scrolled sideways. */
+.md-typeset .psds-table-scroll table th:first-child,
+.md-typeset .psds-table-scroll table td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: var(--md-default-bg-color);
+  box-shadow: 1px 0 0 var(--psds-border);
+}
+
+.md-typeset .psds-table-scroll table thead th {
+  background: var(--psds-surface);
+}
+
+.md-typeset .psds-table-scroll table tbody tr:nth-child(even) td {
+  background: color-mix(in srgb, var(--psds-surface) 55%, transparent);
+}
+
+.md-typeset .psds-table-scroll table tbody tr:nth-child(even) th:first-child {
+  background: var(--md-default-bg-color);
+}
+
+@media screen and (max-width: 44rem) {
+  .md-typeset .psds-table-scroll table:not([class]) {
+    font-size: 0.66rem;
+  }
+
+  .md-typeset .psds-table-scroll table th,
+  .md-typeset .psds-table-scroll table td {
+    padding: 0.18rem 0.36rem;
+  }
+}
+
+/* Long inline maths in a flowing sentence: keep it on one line and let it
+   scroll rather than widen the page. */
+.md-typeset span.arithmatex {
+  display: inline-block;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  vertical-align: bottom;
+}
+
+/* Figures are drawn on a light plate so they keep their original ink colours in
+   both themes; in dark mode the plate gets rounding and a shadow so it reads as
+   a deliberate panel rather than a glare. */
+[data-md-color-scheme="slate"] .md-typeset p > img,
+[data-md-color-scheme="slate"] .md-typeset p > a > img {
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+}

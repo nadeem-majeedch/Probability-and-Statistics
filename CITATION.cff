@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this course in teaching or research, please cite it as below."
+title: "Probability and Statistics for Data Science"
+abstract: >-
+  A complete, self-study course in probability and statistics for BS Data Science
+  students, covering mathematical foundations, descriptive statistics and
+  visualisation, combinatorics, probability theory, conditional probability and
+  Bayes' theorem, random variables and distributions, joint distributions,
+  expectation, variance and covariance, sampling distributions, the Law of Large
+  Numbers and the Central Limit Theorem, estimation, confidence intervals,
+  hypothesis testing, correlation, regression, ANOVA, chi-square and
+  nonparametric methods, Bayesian statistics, Monte Carlo simulation, and
+  statistical practice for data science. Includes derivations, worked examples,
+  simulations, Python demonstrations, interactive labs, exercises and solutions.
+authors:
+  - family-names: Majeed
+    given-names: Muhammad Nadeem
+    affiliation: "Department of Data Science (PUCIT), University of the Punjab, Lahore"
+type: book
+license: CC-BY-NC-SA-4.0
+repository-code: "https://github.com/nadeem-majeedch/Probability-and-Statistics"
+url: "https://nadeem-majeedch.github.io/Probability-and-Statistics/"
+keywords:
+  - probability
+  - statistics
+  - data science
+  - education
+  - python
+  - simulation
+  - bayesian statistics
+version: 0.1.0
+date-released: "2026-11-13"

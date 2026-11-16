@@ -1,0 +1,162 @@
+# ---------------------------------------------------------------------------
+# Publish the course website to GitHub Pages.
+#
+# Build and validation run on every push to main and on manual dispatch.
+# Deployment happens only if every check passes, and only through the official
+# GitHub Pages actions — no branch is pushed and no build output is committed.
+#
+# One-time repository setup is described in maintainer/deployment.md.
+# ---------------------------------------------------------------------------
+
+name: Deploy course website
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+# Least privilege: the build job reads the repository and nothing else.
+permissions:
+  contents: read
+
+# Superseded builds are cancelled; a deployment that has started is never
+# cancelled (see the deploy job's own concurrency group).
+concurrency:
+  group: pages-build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build and validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: |
+            requirements.txt
+            requirements-docs.txt
+
+      - name: Install documentation dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Validate MkDocs configuration
+        run: |
+          python - <<'PY'
+          import pathlib
+          import sys
+          import yaml
+
+          class Loader(yaml.SafeLoader):
+              """Safe loader that tolerates MkDocs' !!python/... extension tags."""
+
+
+          Loader.add_multi_constructor(
+              "tag:yaml.org,2002:python/", lambda loader, suffix, node: None
+          )
+
+          config = yaml.load(
+              pathlib.Path("mkdocs.yml").read_text(encoding="utf-8"), Loader=Loader
+          )
+          problems = []
+
+          site_url = str(config.get("site_url", ""))
+          if not site_url.startswith("https://") or not site_url.endswith("/"):
+              problems.append(f"site_url must be an absolute URL ending in '/': {site_url!r}")
+          if "Probability-and-Statistics" not in site_url:
+              problems.append("site_url does not match the repository name used by GitHub Pages")
+
+          if config.get("docs_dir") != "docs":
+              problems.append("docs_dir must be 'docs'")
+
+          nav = config.get("nav") or []
+          if len(nav) < 5:
+              problems.append(f"nav has only {len(nav)} top-level entries; expected the full course")
+
+          plugins = [p if isinstance(p, str) else next(iter(p)) for p in config.get("plugins", [])]
+          for required in ("search", "minify"):
+              if required not in plugins:
+                  problems.append(f"plugin {required!r} is missing")
+
+          extensions = config.get("markdown_extensions", [])
+          names = [e if isinstance(e, str) else next(iter(e)) for e in extensions]
+          if "pymdownx.arithmatex" not in names:
+              problems.append("pymdownx.arithmatex is required for maths rendering")
+
+          scripts = " ".join(config.get("extra_javascript", []))
+          if "mathjax" not in scripts.lower():
+              problems.append("MathJax is not loaded in extra_javascript")
+
+          for hook in config.get("hooks", []):
+              if not pathlib.Path(hook).exists():
+                  problems.append(f"hook not found: {hook}")
+
+          if problems:
+              print("Configuration problems:")
+              for item in problems:
+                  print(" -", item)
+              sys.exit(1)
+          print(f"mkdocs.yml OK: {len(nav)} nav sections, site_url {site_url}")
+          PY
+
+      - name: Check maths delimiters
+        run: python tools/check_math.py
+
+      - name: Check asset references
+        run: python tools/check_assets.py
+
+      - name: Build site (strict)
+        run: mkdocs build --strict
+
+      - name: Validate generated site
+        run: python tools/check_site.py
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    # Deployment needs to publish to Pages and mint an OIDC token; nothing else.
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    # Serialise deployments. Never cancel one in flight: an interrupted Pages
+    # deployment can leave the environment unusable until it is re-run.
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Record the published URL
+        run: |
+          echo "### Published" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "${{ steps.deployment.outputs.page_url }}" >> "$GITHUB_STEP_SUMMARY"

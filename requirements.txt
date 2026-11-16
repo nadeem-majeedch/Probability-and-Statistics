@@ -1,0 +1,13 @@
+# ---------------------------------------------------------------------------
+# Website build environment — the single entry point CI installs.
+#
+# requirements-docs.txt holds the pinned MkDocs stack; this file exists so that
+# a build has one obvious, stable name to install, whether from CI or a fresh
+# clone. Do not add notebook or course libraries here: a site build must never
+# fail because a notebook dependency changed.
+#
+#   pip install -r requirements.txt
+#   mkdocs build --strict
+# ---------------------------------------------------------------------------
+
+-r requirements-docs.txt

@@ -1,0 +1,142 @@
+/* Self-assessment quizzes: readable question blocks, immediate feedback,
+   and a print layout that turns any page into a practice sheet. */
+
+.quiz {
+  margin: 1.2rem 0 2rem;
+}
+
+.quiz-q {
+  border-left: 3px solid var(--md-primary-fg-color);
+  padding: 0.4rem 0 0.6rem 0.9rem;
+  margin-bottom: 1.1rem;
+}
+
+.quiz-stem {
+  font-weight: 600;
+  margin: 0 0 0.4rem;
+}
+
+.quiz-num {
+  color: var(--md-primary-fg-color);
+  margin-right: 0.15rem;
+}
+
+.quiz-options {
+  list-style: none;
+  margin: 0.2rem 0 0.5rem;
+  padding-left: 0;
+}
+
+.quiz-options li {
+  padding: 0.12rem 0.3rem;
+  border-radius: 3px;
+}
+
+.quiz-options label {
+  cursor: pointer;
+  display: block;
+}
+
+.quiz-options input {
+  margin-right: 0.4rem;
+}
+
+.quiz-label {
+  font-weight: 600;
+  margin-right: 0.15rem;
+}
+
+.quiz-options li.is-correct {
+  background: rgba(76, 175, 80, 0.18);
+}
+
+.quiz-options li.is-wrong {
+  background: rgba(244, 67, 54, 0.16);
+}
+
+.quiz-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin: 0.2rem 0 0.4rem;
+}
+
+.quiz button {
+  font: inherit;
+  font-size: 0.72rem;
+  padding: 0.28rem 0.7rem;
+  border-radius: 4px;
+  border: 1px solid var(--md-primary-fg-color);
+  background: transparent;
+  color: var(--md-primary-fg-color);
+  cursor: pointer;
+}
+
+.quiz button:hover,
+.quiz button:focus-visible {
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+}
+
+.quiz-feedback {
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.quiz-feedback--ok {
+  color: #2e7d32;
+}
+
+.quiz-feedback--no {
+  color: #c62828;
+}
+
+.quiz-feedback--empty {
+  color: var(--md-default-fg-color--light);
+}
+
+.quiz-answer {
+  margin-top: 0.35rem;
+  font-size: 0.84rem;
+}
+
+.quiz-answer summary {
+  cursor: pointer;
+  color: var(--md-primary-fg-color);
+}
+
+.quiz-toolbar {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  align-items: center;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  padding-top: 0.7rem;
+}
+
+.quiz-score {
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+/* Practice-sheet print layout: questions only, answers and controls removed.
+   Answer keys are ordinary tables and therefore still print. */
+@media print {
+  .quiz-controls,
+  .quiz-toolbar,
+  .quiz-answer {
+    display: none !important;
+  }
+
+  .quiz-q {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    border-left: 2px solid #999;
+  }
+
+  .quiz-options li.is-correct,
+  .quiz-options li.is-wrong {
+    background: none;
+  }
+}

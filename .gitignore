@@ -1,0 +1,50 @@
+# ---------------------------------------------------------------------------
+# Probability and Statistics for Data Science
+# Ignore rules for the local working copy.
+# ---------------------------------------------------------------------------
+
+# --- Python -----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+.venv-docs/
+.venv-prac/
+venv/
+env/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# --- MkDocs build output ----------------------------------------------------
+# Never commit the rendered site; it is generated from docs/.
+site/
+.cache/
+.cache/plugin/
+
+# --- Notebook / data scratch ------------------------------------------------
+# Executed copies and scratch analysis stay local; committed notebooks are
+# the curated, reviewed versions only.
+*.executed.ipynb
+/scratch/
+/data/raw/downloads/
+
+# --- Tooling ----------------------------------------------------------------
+# Freebuff workspace metadata is local to the editor, not part of the course.
+.freebuff/
+
+# --- Secrets and local configuration ----------------------------------------
+.env
+.env.*
+!.env.example
+
+# --- Operating system and editors -------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*~

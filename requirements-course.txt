@@ -1,0 +1,30 @@
+# ---------------------------------------------------------------------------
+# Course environment — for running the Python in the modules and notebooks.
+#
+# Python 3.12 or 3.13 is required. Do not use 3.14: compiled wheels for parts of
+# this stack, and PyMC in particular, lag new interpreter releases.
+#
+#   python -m venv .venv
+#   .venv/Scripts/activate           (Windows)
+#   pip install -r requirements-course.txt
+# ---------------------------------------------------------------------------
+
+numpy>=2.0
+scipy>=1.14
+pandas>=2.2
+matplotlib>=3.9
+seaborn>=0.13
+plotly>=5.24
+statsmodels>=0.14
+scikit-learn>=1.5
+sympy>=1.13
+pingouin>=0.5
+
+# Notebook environment
+jupyterlab>=4.2
+ipykernel>=6.29
+
+# Optional — Module 27 only. Both the module and its notebook provide a
+# closed-form path that works without PyMC, so installation failure is not fatal.
+# pymc>=5.16
+# arviz>=0.19

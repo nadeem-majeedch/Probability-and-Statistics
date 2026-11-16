@@ -1,0 +1,43 @@
+{% extends "main.html" %}
+
+{# Material's stock 404 template replaces the page body with a bare
+   "404 - Not found" heading and no way back into the course. MkDocs builds the
+   404 page from this theme template (docs/404.md content is not rendered on the
+   404 route), so the recovery links live here. Links are absolute because the
+   page is served by GitHub Pages for any mistyped path, at any depth. #}
+
+{% block htmltitle %}
+  <title>Page not found – {{ config.site_name }}</title>
+{% endblock %}
+
+{% block content %}
+  <h1>Page not found</h1>
+  <p>
+    That address does not exist on this site. A link may have been mistyped, or
+    the page may have been renamed since the link was written.
+  </p>
+  <p>Where to go next:</p>
+  <ul>
+    <li>
+      <a href="{{ config.site_url }}">Course home</a> — the course map and the
+      recommended place to start.
+    </li>
+    <li>
+      <a href="{{ config.site_url }}modules/">Module index</a> — all 24 chapters,
+      with prerequisites.
+    </li>
+    <li>
+      <a href="{{ config.site_url }}how-to-study/">How to study this course</a> —
+      a study routine for self-study.
+    </li>
+    <li>
+      <a href="{{ config.site_url }}reference/glossary/">Glossary</a> and
+      <a href="{{ config.site_url }}reference/formula-sheet/">formula sheets</a> —
+      for looking a term, symbol or formula up.
+    </li>
+  </ul>
+  <p>
+    You can also type in the search box at the top of any page (press
+    <kbd>/</kbd>) to search the whole course.
+  </p>
+{% endblock %}

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" role="img" aria-label="Probability and Statistics for Data Science">
+  <rect x="0" y="0" width="40" height="40" rx="9" fill="#1E3A8A"/>
+  <path d="M6 29.5 C12.5 29.5 13.2 10.5 20 10.5 C26.8 10.5 27.5 29.5 34 29.5"
+        fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round"/>
+  <line x1="6" y1="33.2" x2="34" y2="33.2" stroke="#8FA8FF" stroke-width="1.6" stroke-linecap="round"/>
+</svg>
